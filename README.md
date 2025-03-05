@@ -27,13 +27,15 @@
 📂 프로젝트 폴더 구조
 
 projectMangement/
-├── htdocs/
-│   ├── index.php  # 메인 페이지
-│   ├── board/
-│   │   ├── board.php  # 게시판 메인
-│   │   ├── create_post.php  # 게시글 작성
-│   │   ├── delete_post_check.php  # 게시글 삭제
-│   │   ├── download_file.php  # 파일 다운로드
+
+
+├── htdocs/ <br>
+│   ├── index.php  # 메인 페이지 <br>
+│   ├── board/ <br>
+│   │   ├── board.php  # 게시판 메인 <br>
+│   │   ├── create_post.php  # 게시글 작성 <br>
+│   │   ├── delete_post_check.php  # 게시글 삭제 <br>
+│   │   ├── download_file.php  # 파일 다운로드 <br>
 │   ├── ...
 
 🔧 설치 및 실행 방법
@@ -41,36 +43,38 @@ projectMangement/
 1. 환경 설정
 
 XAMPP 또는 LAMP를 설치합니다.
+
 Apache와 MySQL을 실행합니다.
 
 2. 프로젝트 배포
 
 htdocs/ 폴더를 XAMPP의 htdocs 디렉토리에 복사합니다.
+
 브라우저에서 http://localhost/index.php에 접속합니다.
 
-3. 데이터베이스 설정
-테이블 구조
-project: 프로젝트 정보
-user: 사용자 정보
-project_member: 프로젝트 멤버 정보
-task: 작업 정보
-subtask: 세부작업 정보
-article: 게시글 정보
-file: 파일 정보
-article_attachment: 게시글 첨부파일 정보
+3. 데이터베이스 설정 <br>
+테이블 구조 <br>
+project: 프로젝트 정보 <br>
+user: 사용자 정보 <br>
+project_member: 프로젝트 멤버 정보 <br>
+task: 작업 정보 <br>
+subtask: 세부작업 정보 <br>
+article: 게시글 정보 <br>
+file: 파일 정보 <br>
+article_attachment: 게시글 첨부파일 정보 <br>
 
-뷰
-latest_project_view: 최신 프로젝트 정보
-latest_task_view: 최신 작업 정보
-latest_subtask_view: 최신 세부작업 정보
-latest_summary_view: 프로젝트, 작업, 세부작업 요약 정보
+뷰 <br>
+latest_project_view: 최신 프로젝트 정보 <br>
+latest_task_view: 최신 작업 정보 <br>
+latest_subtask_view: 최신 세부작업 정보 <br>
+latest_summary_view: 프로젝트, 작업, 세부작업 요약 정보 <br>
+ 
+프로시저 <br>
+request_subtask_completion: 세부작업 완료 승인 요청 <br>
+start_project: 프로젝트 시작 시 세부작업 시작 날짜 설정 <br>
 
-프로시저
-request_subtask_completion: 세부작업 완료 승인 요청
-start_project: 프로젝트 시작 시 세부작업 시작 날짜 설정
-
-트리거
-프로젝트, 작업, 세부작업 정보 변경 시 자동 알림
+트리거 <br>
+프로젝트, 작업, 세부작업 정보 변경 시 자동 알림 <br>
 
 관리자의 프로젝트 멤버 추가 방지
 
