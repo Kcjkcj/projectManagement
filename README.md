@@ -28,6 +28,8 @@
 
 데이터베이스: MySQL
 
+UI/UX 도구 : Figma
+
 환경: Apache (XAMPP 또는 LAMP)
 
 📂 프로젝트 폴더 구조
